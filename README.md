@@ -9,4 +9,4 @@ This is a gaming website that offers purchase and refund services.
 
 
 Credentials
-- **Postgresql DB** - *username*: postgres *pw*: postgres2023$
+- **Postgresql DB** - **Username**: *postgres* **PW**: *postgres2023$*
