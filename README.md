@@ -14,3 +14,4 @@ Credentials
 Resources
 - **webservertestnetwork** - EC2 instance that runs webserver and can connect to postgressql server on AWS
 - **PostgresSQLServer** - psql -h database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com -U postgres
+- **WorkingSite** - http://18.118.132.207/ This can change if the ec2 is stopped.
