@@ -10,7 +10,7 @@ This is a gaming website that offers purchase and refund services.
 
 Credentials
 - **Postgresql DB** - **Username**: *postgres* **PW**: *postgres2023$*
-
+- **Ec2 instance user and PW** - **Ubuntu** ** Vl!0055480
 Resources
 - **webservertestnetwork** - EC2 instance that runs webserver and can connect to postgressql server on AWS
 - **PostgresSQLServer** - psql -h database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com -U postgres
