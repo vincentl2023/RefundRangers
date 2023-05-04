@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo yum install -y httpd
+# Install PHP and the PostgreSQL extension for PHP
+sudo yum -y install php
+sudo yum -y install php-pgsql
+# Restart the Apache web server
+sudo service httpd restart
