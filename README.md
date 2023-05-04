@@ -26,7 +26,7 @@ This guide provides step-by-step instructions for launching an Amazon Machine Im
 #### Launching an AMI
 
 1. Go to the EC2 dashboard in your AWS console and navigate to the "AMIs" section.
-2. Select the newest AMI.
+2. Select the **"newest"** AMI.
 3. Launch an instance from the selected AMI.
 4. Give your instance a name.
 5. Use "RR-Production" for Keypair.
