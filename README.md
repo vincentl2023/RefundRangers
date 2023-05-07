@@ -18,6 +18,7 @@ This is a gaming website that offers purchase and refund services.
 - **webservertestnetwork** - EC2 instance that runs webserver and can connect to postgressql server on AWS
 - **PostgresSQLServer** - psql -h database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com -U postgres
 - **WorkingSite** - http://changemeipaddress This can change if the ec2 is stopped.
+- **LoadBalancer Website** - http://alb-test-317635422.us-east-2.elb.amazonaws.com/refund1.html
 
 ### How to Run AMI and Attach to Pipeline for Updates from GitHub
 
