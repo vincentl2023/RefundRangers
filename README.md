@@ -20,31 +20,37 @@ This is a gaming website that offers purchase and refund services.
 - **WorkingSite** - http://changemeipaddress This can change if the ec2 is stopped.
 - **LoadBalancer Website** - http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html
 
-### How to Run AMI and Attach to Pipeline for Updates from GitHub
+# Instructions for setting up RDS and EC2 instances
 
-This guide provides step-by-step instructions for launching an Amazon Machine Image (AMI) and attaching it to a pipeline for updates from GitHub. This guide assumes that you have an AWS account and basic knowledge of AWS services.
+## Restore RDS instance from snapshot
 
-#### Launching an AMI
+1. Go to AWS Management Console and navigate to RDS service.
+2. Choose Snapshots from the left navigation panel.
+3. Select the snapshot that you want to restore from the list.
+4. Click on the "Actions" button and choose "Restore Snapshot".
+5. In the "Restore DB Instance" page, choose the following options:
+   - DB engine: PostgresSQL
+   - DB instance class: Burstable classes db.t3.micro
+   - Multi-AZ deployment: No
+   - DB instance identifier: database-1
+   - Public accessibility: Yes
+   - Existing VPC security groups: delete default. enter these 2: webservertest rds-ec2-3
+   - Availability Zone: us-east-2c
+6. Click "Restore DB instance" button.
 
-1. Go to the EC2 dashboard in your AWS console and navigate to the "AMIs" section.
-2. Select the **"newest"** AMI.
-3. Launch an instance from the selected AMI.
-4. Give your instance a name.
-5. Use "RR-Production" for Keypair.
-6. Select **"default"** for the existing security group.
-7. Click "Advanced Details".
-8. Under "IAM Instance profile", select "EC2CodeDeploy".
-9. Launch the instance.
+## Turn on an EC2 website instance
 
-#### Attaching to Pipeline for Updates from GitHub
+1. Go to AWS Management Console and navigate to EC2 service.
+2. Choose Auto Scaling Groups from the left navigation panel.
+3. Select DEMOasg from the list.
+4. Under Group Details, click "Edit".
+5. Change all three settings to 1.
+6. Click "Save".
 
-1. Go to the CodeDeploy dashboard in your AWS console and navigate to the "Applications" section.
-2. Click on the application name to edit it.
-3. Select "RR_CICD-DP" and click "Edit".
-4. Change "Tag Group 1" to your newly created EC2 instance in the "Value" field.
-5. Save your changes.
-6. Then go into the search and go back to EC2.
-7. Wait for your EC2 instance to build and load.
-8. Test using the Public IP4 address (note that it must be http:// only, so remove the "s" from "https" if you want it to work).
+## Update files in Github
 
-Congratulations! You have successfully launched an AMI and attached it to a pipeline for updates from GitHub.
+1. Make sure that the Database-1 endpoint is `database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com`. If not, update the `processrefund.php` and `processserver.php` files in Github with the name of the `$host`.
+
+## Test functionality
+
+1. Visit http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html to test functionality before making any changes.
