@@ -19,7 +19,7 @@ This is a gaming website that offers purchase and refund services.
 - **PostgresSQLServer** - psql -h database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com -U postgres
 - **WorkingSite** - http://changemeipaddress This can change if the ec2 is stopped.
 - **LoadBalancer Website** - http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html
-
+- **Working Website** - http://www.refundrangers.com
 # Instructions for setting up RDS and EC2 instances
 
 ## Restore RDS instance from snapshot
