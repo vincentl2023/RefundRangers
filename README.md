@@ -17,7 +17,6 @@ This is a gaming website that offers purchase and refund services.
 
 - **webservertestnetwork** - EC2 instance that runs webserver and can connect to postgressql server on AWS
 - **PostgresSQLServer** - psql -h database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com -U postgres
-- **WorkingSite** - http://changemeipaddress This can change if the ec2 is stopped.
 - **LoadBalancer Website** - http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html
 - **Working Website** - http://www.refundrangers.com
 # Instructions for setting up RDS and EC2 instances
@@ -53,4 +52,4 @@ This is a gaming website that offers purchase and refund services.
 
 ## Test functionality
 
-1. Visit http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html to test functionality before making any changes.
+1. Visit https://www.refundrangers.com to test functionality before making any changes.
