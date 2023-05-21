@@ -4,6 +4,7 @@ provider "aws" {
 
 data "aws_security_group" "default" {
   name = "default"
+  vpc_id = "vpc-0c00a31c03811e261"
 }
 
 resource "aws_instance" "web" {
