@@ -20,7 +20,7 @@ This is a gaming website that offers purchase and refund services.
 - **LoadBalancer Website** - http://alb-test-317635422.us-east-2.elb.amazonaws.com/index.html
 - **Working Website** - http://www.refundrangers.com
 # Instructions for setting up RDS and EC2 instances
-
+## You can now use terraform to create an RDS using the rds.tf code.
 ## Restore RDS instance from snapshot
 
 1. Go to AWS Management Console and navigate to RDS service.
@@ -38,7 +38,7 @@ This is a gaming website that offers purchase and refund services.
 6. Click "Restore DB instance" button.
 
 ## Turn on an EC2 website instance
-
+## You can now use terraform to create an ec2 instance using the main.tf code.
 1. Go to AWS Management Console and navigate to EC2 service.
 2. Choose Auto Scaling Groups from the left navigation panel.
 3. Select DEMOasg from the list.
