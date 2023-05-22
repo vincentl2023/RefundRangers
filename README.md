@@ -53,3 +53,4 @@ This is a gaming website that offers purchase and refund services.
 ## Test functionality
 
 1. Visit https://www.refundrangers.com to test functionality before making any changes.
+2.  TO make it super easy to setup a test production environment, use the terraform file main(resources).tf and make sure to include the server-script.sh in the folder as well.
