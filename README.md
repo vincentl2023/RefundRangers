@@ -48,7 +48,7 @@ This is a gaming website that offers purchase and refund services.
 
 ## Update files in Github
 
-1. Make sure that the Database-1 endpoint is `database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com`. If not, update the `processrefund.php` and `processserver.php` files in Github with the name of the `$host`.
+1. Make sure that the Database-1 endpoint is `database-1.cyj4ppjzlsat.us-east-2.rds.amazonaws.com`. If not, the `processrefund.php` and `processserver.php` files in Github will not connect to the DB.
 
 ## Test functionality
 
