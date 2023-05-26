@@ -16,7 +16,7 @@ resource "aws_db_instance" "myRDS" {
   allocated_storage     = 200
   storage_type          = "gp2"
   identifier            = "database-1"
-  name                  = "purchases"
+  db_name                  = "purchases"
   username              = "postgres"
   password              = "postgres2023$"
   port                  = 5432
