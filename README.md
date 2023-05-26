@@ -9,9 +9,9 @@ This is a gaming website that offers purchase and refund services.
 
 
 ### Credentials
-- **These are test only, they will be encrypted in production enviornments.
+- **These are test only, they will be encrypted in production enviornments.**
 - **Postgresql DB** - **Username**: *postgres* **PW**: *postgres2023$*
-- **Ec2 instance Ubuntu2RDS user and PW** - **Ubuntu** Friday2023
+- **Ec2 instance that connects to DB: Ubuntu2RDS user and PW** - **Ubuntu** Friday2023
 
 ### Resources
 
